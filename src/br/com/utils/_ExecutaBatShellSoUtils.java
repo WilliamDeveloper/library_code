@@ -30,5 +30,7 @@ public class _ExecutaBatShellSoUtils {
 
     public static void main(String[] args) {
         System.out.println(_ExecutaBatShellSoUtils.doExecutarComando("ping google.com -n 5"));
+        //System.out.println(_ExecutaBatShellSoUtils.doExecutarComando("cmd /c mkdir foo"));
+
     }
 }
