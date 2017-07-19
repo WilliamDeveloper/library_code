@@ -17,4 +17,9 @@ public class _HttpUtils {
         }
         return reachable;
     }
+
+    public static void main(String[] args) {
+        System.out.println("ip [10.0.0.28] isIpReacheable : "+_HttpUtils.isIpReacheable("10.0.0.28",5 * 1000));
+        System.out.println("ip [11.0.0.28] isIpReacheable : "+_HttpUtils.isIpReacheable("11.0.0.28",5 * 1000));
+    }
 }

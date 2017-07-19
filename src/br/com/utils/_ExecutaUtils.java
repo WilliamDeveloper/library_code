@@ -27,4 +27,8 @@ public class _ExecutaUtils {
 
         return output.toString();
     }
+
+    public static void main(String[] args) {
+        System.out.println(_ExecutaUtils.doExecutarComando("ping google.com -n 5"));
+    }
 }
