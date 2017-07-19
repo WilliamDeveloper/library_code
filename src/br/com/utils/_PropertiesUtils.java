@@ -6,9 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-/**
- * Created by 201232 on 19/07/2017.
- */
+
 public class _PropertiesUtils {
 
     public static Map<String, String> doCarregarArquivo(String pNomeArquivo){

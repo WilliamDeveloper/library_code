@@ -3,9 +3,7 @@ package br.com.utils;
 import java.io.File;
 
 
-/**
- * Created by 201232 on 19/07/2017.
- */
+
 public class _FileUtils {
 
     public static boolean doDirCreate(String pNomeDiretorio){
