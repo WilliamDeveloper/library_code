@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 
-public class _ExecutaUtils {
+public class _ExecutaBatShellSoUtils {
 
     private static String doExecutarComando(String command) {
 
@@ -29,6 +29,6 @@ public class _ExecutaUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println(_ExecutaUtils.doExecutarComando("ping google.com -n 5"));
+        System.out.println(_ExecutaBatShellSoUtils.doExecutarComando("ping google.com -n 5"));
     }
 }
