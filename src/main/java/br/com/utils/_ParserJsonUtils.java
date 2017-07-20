@@ -25,11 +25,11 @@ public class _ParserJsonUtils {
        configServidores.put("S2", s2);
        configServidores.put("S3", s3);
 
-       String str = ParserJSON.fromObjToJSON(configServidores);
+       String str = _ParserJsonUtils.fromObjToJSON(configServidores);
        System.out.println(str);
-       //ParserJSON.saveJSONFile(configServidores,caminho);
+       //_ParserJsonUtils.saveJSONFile(configServidores,caminho);
 
-       Map<String,Servidor> mj = ParserJSON.fromJSONFiletoMap(caminho, V_Constantes.TIPO_MAP_SERVIDOR);
+       Map<String,Servidor> mj = _ParserJsonUtils.fromJSONFiletoMap(caminho, V_Constantes.TIPO_MAP_SERVIDOR);
        System.out.println(mj.get("S1").servidorNome);
 */
     }
