@@ -30,6 +30,19 @@ public class _PropertiesUtils {
         return new HashMap<String, String>();
     }
 
+    public static String doGetValueFromKey(String pNomeArquivo, String pKey){
+        Properties properties = new Properties();
+
+        try {
+            properties.load(new FileInputStream(pNomeArquivo));
+            return properties.getProperty(pKey);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return "#";
+    }
+
     public static void doMostrarChaveValor( Map<String, String> pMap){
         for (Map.Entry<String,String> entry : pMap.entrySet()) {
             String key = entry.getKey();
@@ -41,5 +54,7 @@ public class _PropertiesUtils {
     public static void main(String[] args) {
         Map<String, String>  vMap = _PropertiesUtils.doCarregarArquivo("src/br/com/utils/arquivo.properties");
         _PropertiesUtils.doMostrarChaveValor(vMap);
+
+        System.out.println(_PropertiesUtils.doGetValueFromKey("src/br/com/utils/arquivo.properties","pimba"));
     }
 }
